@@ -1,10 +1,5 @@
-<?php
-// ตั้งค่า header เพื่อให้ระบุว่า response เป็น JSON
-header('Content-Type: application/json');
 
-// สร้างข้อมูลเวลาในรูปแบบ array
-$response = [
-    "times" => [
+"times" => [
         [
             "year" => 2024,
             "month" => 9,
@@ -27,8 +22,4 @@ $response = [
             "minute" => 45
         ]
     ]
-];
 
-// แปลงข้อมูล array เป็น JSON และส่งกลับไปยัง client
-echo json_encode($response);
-?>
